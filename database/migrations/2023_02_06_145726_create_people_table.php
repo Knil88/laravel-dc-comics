@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('name',32)->notnullable();
             $table->string('lastname')->notnullable();
             $table->date('date_of_birth')->notnullable();
-            $table->integer('height')->unsigned();
+            $table->decimal('height')->unsigned();
             $table->timestamps();
         });
     }

@@ -8,7 +8,9 @@ header{
     margin-bottom: 20px;
 }
 table{
-    overflow: scroll;
+   text-align: center;
+   width: 80%;
+   margin: auto;
 }
 a{
     text-decoration: none;
@@ -18,6 +20,53 @@ section{
     height: 77vh;
     align-items: center;
     text-align: center;
+}
+.btn_create{
+    background-color: steelblue;
+    color:white;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    transition: ease-in-out 0.8s;
+    &:hover{
+        background-color: white;
+        border: steelblue 1px solid;
+    }
+    #link_create{
+        text-decoration: none;
+        color: white;
+        transition: ease-in-out 0.8s;
+        &:hover{
+            color: steelblue;
+            font-weight: bold;
+        }
+    }
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: white solid 3px;
+    background-color: steelblue;
+    width: 100%;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    input{
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid white;
+        color: white;
+    }
+
+}
+#btn_submit{
+    background-color: white;
+    color: steelblue;
+    
+
 }
 footer{
     background-color: steelblue;

@@ -22,3 +22,16 @@ Route::get('/', [MainController::class,'home'])->name('home');
 
 Route :: get('/person/show/{person}', [MainController :: class, 'personShow'])
     -> name('person.show');
+   
+    //Con il metodo  delete agganciato al controller consentirà nella pagina home appena colegato al link elimineremo i dati
+
+ Route :: get('/person/delete/{person}', [MainController :: class, 'personDelete'])
+-> name('person.delete');
+
+//con questo metodo(il create) andiamo a definire du rotte rotte la prima che condurraà al form e la seconda che rimanderà alla pagina home
+
+Route :: get('/person/create', [MainController :: class, 'personCreate'])
+    -> name('person.create');
+
+    Route :: post('/person/store', [MainController :: class, 'personStore'])
+    -> name('person.store');
