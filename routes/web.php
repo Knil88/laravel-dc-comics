@@ -14,4 +14,11 @@ use App\Http\Controllers\MainController;
 |
 */
 
-Route::get('/', [MainController::class,'home']);
+//Per ogni metodo andiamo a creare una route
+
+Route::get('/', [MainController::class,'home'])->name('home');
+
+//Con questo metodo possiamo mostare per ogni dato tutte le specifiche
+
+Route :: get('/person/show/{person}', [MainController :: class, 'personShow'])
+    -> name('person.show');

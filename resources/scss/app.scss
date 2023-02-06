@@ -1,1 +1,25 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+header{
+    text-align: center;
+    background-color: steelblue;
+    padding: 10px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+}
+table{
+    overflow: scroll;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+section{
+    height: 77vh;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    background-color: steelblue;
+    height: 50px;
+}

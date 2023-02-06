@@ -1,3 +1,3 @@
 <header>
-    <h1>Ciao a tutti</h1>
+    <h1>People Database</h1>
 </header>

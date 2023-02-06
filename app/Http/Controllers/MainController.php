@@ -14,4 +14,10 @@ class MainController extends Controller
         
         return view('home',compact('people'));
     }
+    //Creaimo il metodo show che cliccando sul nome andrà  a visualizzare tutte le specifiche e lo colleghiamo alla pagina person
+
+    public function personShow(Person  $person) {
+
+        return view('person', compact('person'));
+    }
 }
