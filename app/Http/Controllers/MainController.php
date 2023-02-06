@@ -37,8 +37,8 @@ class MainController extends Controller
         $data = $request -> validate([
             'name' => 'required|string|max:32',
             'lastname' => 'nullable|string',
-            'date_of_birth' => 'required|integer|min:0|max:10',
-            'height'=>'required|integer/min'
+            'date_of_birth' => 'required',
+            'height'=>'nullable',
         ]);
     
         $person = new Person();
