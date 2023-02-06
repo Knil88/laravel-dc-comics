@@ -13,6 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
+        // Questo andrà a creare la tabella  nel database tramite il comando :php artisan:migrate refresh nel terminale
+
         Schema::create('people', function (Blueprint $table) {
             $table->id();
             $table->string('name',32)->notnullable();

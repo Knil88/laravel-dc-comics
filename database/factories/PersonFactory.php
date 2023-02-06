@@ -16,6 +16,8 @@ class PersonFactory extends Factory
      */
     public function definition()
     {
+        // Utilizziamo la  factory per creare dei dati faker che andranno a riempire la nostra tabella
+
         return [
           'name'=>fake()->firstName(),
           'lastname'=>fake()->lastName(),

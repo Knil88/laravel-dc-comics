@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
+    //Andiamo a richiamre la classe PersonSeeder con questo metodo
     {
         $this->call([
 
